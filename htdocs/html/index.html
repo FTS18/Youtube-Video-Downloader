@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spacify Video Downloader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-links->
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../additional-requirements/external-css/responsiveslides.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-scripts->
+    <script src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../../additional-requirements/external-js/responsiveslides.js"></script>
+    <!-fonts->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-favicons->
+    <link rel="apple-touch-icon" sizes="180x180" href="../res\favicons/apple-touch-icon.png?v=0.1">
+    <link rel="icon" type="image/png" sizes="32x32" href="../res\favicons/favicon-32x32.png?v=0.1">
+    <link rel="icon" type="image/png" sizes="194x194" href="../res\favicons/favicon-194x194.png?v=0.1">
+    <link rel="icon" type="image/png" sizes="192x192" href="../res\favicons/android-chrome-192x192.png?v=0.1">
+    <link rel="icon" type="image/png" sizes="16x16" href="../res\favicons/favicon-16x16.png?v=0.1">
+    <link rel="manifest" href="../res\favicons/site.webmanifest?v=0.1">
+    <link rel="mask-icon" href="../res\favicons/safari-pinned-tab.svg?v=0.1" color="#000000">
+    <link rel="shortcut icon" href="../res\favicons/favicon.ico?v=0.1">
+    <meta name="apple-mobile-web-app-title" content="Spacify Video Downloader">
+    <meta name="application-name" content="Spacify Video Downloader">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="../res\favicons/mstile-144x144.png?v=0.1">
+    <meta name="msapplication-config" content="../res\favicons/browserconfig.xml?v=0.1">
+    <meta name="theme-color" content="#ff0029">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
+                    <g id="svgg">
+                        <path id="path0"
+                            d="M147.889 100.810 C 142.600 101.714,141.838 102.667,130.309 122.800 C 127.348 127.970,120.194 140.390,114.411 150.400 C 85.092 201.148,87.435 196.740,87.670 200.701 C 87.886 204.368,86.094 201.096,120.697 261.000 C 126.289 270.680,132.874 282.092,135.332 286.360 C 140.395 295.154,142.241 297.469,145.288 298.846 L 147.400 299.800 200.400 299.800 C 243.201 299.800,253.686 299.699,254.886 299.274 C 258.499 297.994,260.549 295.274,268.808 280.800 C 271.780 275.590,288.828 246.039,304.921 218.200 C 316.100 198.861,316.131 201.693,304.512 181.565 C 300.777 175.094,291.281 158.640,283.411 145.000 C 275.541 131.360,267.315 117.105,265.131 113.322 C 260.568 105.416,258.525 102.916,255.512 101.554 L 253.400 100.600 201.600 100.542 C 173.110 100.510,148.940 100.631,147.889 100.810 M244.582 114.418 C 250.393 115.258,251.189 116.155,260.704 132.600 C 298.627 198.142,296.999 195.240,297.683 198.503 C 298.563 202.697,300.543 198.920,267.327 256.400 C 262.940 263.990,258.013 272.521,256.376 275.358 C 252.783 281.585,250.746 283.965,247.912 285.246 L 245.800 286.200 201.846 286.310 C 155.107 286.427,154.732 286.414,151.607 284.483 C 148.957 282.845,148.027 281.417,135.739 260.118 C 129.546 249.383,120.106 233.040,114.762 223.800 C 99.542 197.487,99.208 203.487,117.670 171.600 C 124.612 159.610,134.026 143.320,138.589 135.400 C 150.002 115.592,150.227 115.325,156.200 114.407 C 159.279 113.934,241.303 113.944,244.582 114.418 M167.936 137.746 C 162.537 138.926,164.692 135.791,140.682 177.400 C 126.164 202.559,126.169 197.911,140.632 223.000 C 163.249 262.234,161.797 259.959,165.383 261.793 L 167.743 263.000 200.572 263.000 L 233.400 263.000 235.288 262.061 C 238.710 260.361,238.613 260.504,252.077 237.200 C 273.590 199.963,272.453 202.356,271.004 197.339 C 270.272 194.806,269.966 194.243,259.317 175.800 C 237.319 137.703,239.034 140.363,235.290 138.524 L 233.000 137.400 201.600 137.325 C 177.901 137.269,169.645 137.372,167.936 137.746 "
+                            stroke="none" fill="#fa0b14" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="index.html">
+                <p class="logo_txt">Video Downloader</p>
+            </a>
+            <a class="toggle" href="javascript:void(0)">
+                <span><i class="material-icons">short_text</i></span>
+                <span><i class="material-icons">close</i></span>
+            </a>
+            <a class="signIn" href="login.html">Sign In</a>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="slider">
+                <ul class="rslides">
+                    <li><img src="../res/images/bg.png"></li>
+                    <li><img src="../res/images/bg1.png"></li>
+                    <!--<li><img src="../res/images/bg2.png"></li>-->
+                    <li><img src="../res/images/bg4.png"></li>
+                    <li><img src="../res/images/bg5.png"></li>
+                    <li><img src="../res/images/bg6.png"></li>
+                    <li><img src="../res/images/bg7.png"></li>
+                    <li><img src="../res/images/bg8.png"></li>
+                </ul>
+                <div class="overlay"></div>
+                <div class="main-content">
+                    <h3 class="page-title">Download Youtube Videos For <span>Free</span></h3>
+                    <p class="page-description">Enter the <span>URL</span> of the video which you want to download below</p>
+                    <input class="URL-input" type="url" name="url" id="requested-url" placeholder="Enter the URL">
+                    <button class="get-video-info-btn downloadBtn btn-lg">Download</button>
+                </div>
+                <div class="video-data">
+		<div class="data">
+			<div class="thumbnail">
+				<img>
+			</div>
+			<div class="info">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+		</div>
+		<div class="controls">
+			<input type="hidden" id="video-url">
+			<select id="download-options"></select>
+			<button id="download-btn">Download</button>
+		</div>
+	</div>
+            </div>
+    </main>
+    <!-script for slider->
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                auto: true, // Boolean: Animate automatically, true or false
+                speed: 500, // Integer: Speed of the transition, in milliseconds
+                timeout: 6500, // Integer: Time between slide transitions, in milliseconds
+                pager: false, // Boolean: Show pager, true or false
+                nav: false, // Boolean: Show navigation, true or false
+                random: true, // Boolean: Randomize the order of the slides, true or false
+                pause: false, // Boolean: Pause on hover, true or false
+                pauseControls: true, // Boolean: Pause when hovering controls, true or false
+                prevText: "Previous", // String: Text for the "previous" button
+                nextText: "Next", // String: Text for the "next" button
+                maxwidth: "", // Integer: Max-width of the slideshow, in pixels
+                navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+                manualControls: "", // Selector: Declare custom pager navigation
+                namespace: "rslides", // String: Change the default namespace used
+                before: function() {}, // Function: Before callback
+                after: function() {} // Function: After callback
+            });
+        });
+        //NavBar Menu Code
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('span').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
+
+</html>
